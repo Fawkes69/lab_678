@@ -25,3 +25,6 @@ def write_file(data, file_path):
             yaml.dump(data, file, default_flow_style=False)
         else:
             raise ValueError(f"Unsupported file format: {file_path}")
+def convert_file(input_path, output_path):
+    data = read_file(input_path)
+    write_file(data, output_path)
