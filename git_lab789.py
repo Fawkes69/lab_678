@@ -40,5 +40,5 @@ if __name__ == "__main__":
         convert_file(input_path, output_path)
         print(f"Successfully converted {input_path} to {output_path}")
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"error: {e}")
         sys.exit(1)
