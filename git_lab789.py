@@ -9,19 +9,13 @@ def install_package(package):
 
 def check_and_install_packages():
     try:
-        import json
+        import _json
     except ImportError:
-        install_package("json")
-
+        install_package("_json")
     try:
-        import yaml
+        import xml
     except ImportError:
-        install_package("pyyaml")
-
-    try:
-        import xmltodict
-    except ImportError:
-        install_package("xmltodict")
+        install_package("xml")
 
 
 def read_file(file_path):
