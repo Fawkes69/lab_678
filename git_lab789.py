@@ -28,3 +28,17 @@ def write_file(data, file_path):
 def convert_file(input_path, output_path):
     data = read_file(input_path)
     write_file(data, output_path)
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: program.exe pathFile1.x pathFile2.y")
+        sys.exit(1)
+
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
+
+    try:
+        convert_file(input_path, output_path)
+        print(f"Successfully converted {input_path} to {output_path}")
+    except Exception as e:
+        print(f"Error: {e}")
+        sys.exit(1)
