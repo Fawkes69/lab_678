@@ -1,7 +1,6 @@
 import sys
-import json
-import yaml
-import xmltodict
+import _json
+import xml
 
 
 def install_package(package):
