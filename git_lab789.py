@@ -1,6 +1,5 @@
 import sys
-import _json
-import xml
+import subprocess
 
 
 def install_package(package):
